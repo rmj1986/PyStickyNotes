@@ -91,4 +91,4 @@ Feel free to fork the repository, make improvements, and submit pull requests.
 
 ## License
 
-MIT
+This project is open-source and available under the [MIT License](LICENSE).
