@@ -98,7 +98,7 @@ class DraggableTitleBar(QWidget):
 
 class StickyNoteWindow(QMainWindow):
     """
-    A separate window for a single sticky note, allowing rich text editing.
+    A separate window for a single sticky note
     """
     note_updated = pyqtSignal(str, dict) # Signal: note_id, note_data
     note_deleted = pyqtSignal(str)       # Signal: note_id
@@ -150,7 +150,7 @@ class StickyNoteWindow(QMainWindow):
         self.content_widget.setStyleSheet("background-color: #FFFF99; border-bottom-left-radius: 5px; border-bottom-right-radius: 5px;")
         self.content_widget.setAttribute(Qt.WidgetAttribute.WA_StyledBackground, True) # Ensure stylesheet is applied
 
-        # Removed Filter input for this specific sticky note
+        # Removed Filter input for this specific sticky note as this overwrote what was waved in the note!
         # self.note_filter_input = QLineEdit()
         # self.note_filter_input.setPlaceholderText("Filter lines in this note...")
         # self.note_filter_input.textChanged.connect(self._filter_note_content)
